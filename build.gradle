@@ -4,16 +4,15 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.android.tools.build:gradle:8.5.0' // Replace with the latest stable version
     }
 }
 
 allprojects {
     repositories {
-//        jcenter()
-//        maven { url "https://jitpack.io" }
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' } // If you're using libraries from JitPack
     }
 }
 
