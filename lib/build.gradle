@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
-
+    namespace 'cafe.adriel.androidaudioconverter.sample'
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 24
@@ -20,5 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.github.adrielcafe:ffmpeg-android-java:2a627f6ecd@aar'
+//    compile 'com.github.adrielcafe:ffmpeg-android-java:2a627f6ecd@aar'
+    implementation 'com.github.adrielcafe:ffmpeg-android-java:2a627f6ecd@aar'
 }
